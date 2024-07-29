@@ -6,8 +6,8 @@
 # 敬雲 林 <chingyun@yuanchih-consult.com>, 2022
 # Benson <Benson.Dr@Gmail.com>, 2023
 # Martin Trigaux, 2023
-# Wil Odoo, 2024
 # Pak Wai Ho, 2024
+# Wil Odoo, 2024
 # Tony Ng, 2024
 # 
 msgid ""
@@ -377,7 +377,7 @@ msgstr "科目現金捨入"
 #. module: point_of_sale
 #: model:ir.model,name:point_of_sale.model_account_chart_template
 msgid "Account Chart Template"
-msgstr "科目表模版"
+msgstr "賬目總表範本"
 
 #. module: point_of_sale
 #: model:ir.model.fields,field_description:point_of_sale.field_pos_payment__account_move_id
@@ -2287,7 +2287,7 @@ msgstr "現有的訂單資料行"
 #: code:addons/point_of_sale/static/src/js/Popups/ErrorTracebackPopup.js:0
 #, python-format
 msgid "Exit Pos"
-msgstr ""
+msgstr "離開 Pos"
 
 #. module: point_of_sale
 #. odoo-javascript
@@ -6563,6 +6563,8 @@ msgid ""
 "There is at least one pending electronic payment.\n"
 "Please finish the payment with the terminal or cancel it then remove the payment line."
 msgstr ""
+"至少有一項仍待處理的電子付款。\n"
+"請使用終端機完成或取消該付款，然後移除付款資料行。"
 
 #. module: point_of_sale
 #: model_terms:ir.ui.view,arch_db:point_of_sale.pos_config_view_form

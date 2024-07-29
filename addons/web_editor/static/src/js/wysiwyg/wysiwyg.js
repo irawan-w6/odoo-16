@@ -283,6 +283,7 @@ const Wysiwyg = Widget.extend({
             collaborationClientAvatarUrl: this._getCollaborationClientAvatarUrl(),
             renderingClasses: ['o_dirty', 'o_transform_removal', 'oe_edited_link', 'o_menu_loading', 'o_link_in_selection'],
             foldSnippets: !!options.foldSnippets,
+            autoActivateContentEditable: this.options.autoActivateContentEditable,
         }, editorCollaborationOptions));
 
         this.odooEditor.addEventListener('contentChanged', function () {
@@ -1376,6 +1377,8 @@ const Wysiwyg = Widget.extend({
             }
             this.odooEditor.unbreakableStepUnactive();
             this.odooEditor.historyStep();
+            // Refocus again to save updates when calling `_onWysiwygBlur`
+            this.odooEditor.editable.focus();
         } else {
             return this.odooEditor.execCommand('insert', element);
         }
@@ -1663,6 +1666,7 @@ const Wysiwyg = Widget.extend({
                         this.odooEditor.historyPauseSteps();
                         try {
                             this._processAndApplyColor(eventName, ev.data.color, true);
+                            this.odooEditor._computeHistorySelection();
                         } finally {
                             this.odooEditor.historyUnpauseSteps();
                         }
