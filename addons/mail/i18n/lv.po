@@ -2459,9 +2459,11 @@ msgstr "Uzņēmumi"
 
 #. module: mail
 #. odoo-javascript
+#. odoo-python
 #: code:addons/mail/static/src/js/activity.js:0
 #: code:addons/mail/static/src/models/composer_view.js:0
 #: code:addons/mail/static/src/models/mail_template.js:0
+#: code:addons/mail/wizard/mail_compose_message.py:0
 #: model:ir.actions.act_window,name:mail.action_email_compose_message_wizard
 #: model_terms:ir.ui.view,arch_db:mail.email_compose_message_wizard_form
 #, python-format
@@ -6450,7 +6452,7 @@ msgstr "Nākošā aktivitāte"
 #: model:ir.model.fields,field_description:mail.field_res_partner__activity_date_deadline
 #: model:ir.model.fields,field_description:mail.field_res_users__activity_date_deadline
 msgid "Next Activity Deadline"
-msgstr "Nākamās darbības beigu termiņš"
+msgstr "Nākamās aktivitātes beigu termiņš"
 
 #. module: mail
 #: model:ir.model.fields,field_description:mail.field_mail_activity_mixin__activity_summary

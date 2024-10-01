@@ -790,6 +790,7 @@ class AccountMove(models.Model):
     @api.depends('partner_id')
     def _compute_invoice_payment_term_id(self):
         for move in self:
+            move = move.with_company(move.company_id)
             if move.is_sale_document(include_receipts=True) and move.partner_id.property_payment_term_id:
                 move.invoice_payment_term_id = move.partner_id.property_payment_term_id
             elif move.is_purchase_document(include_receipts=True) and move.partner_id.property_supplier_payment_term_id:
@@ -909,7 +910,7 @@ class AccountMove(models.Model):
                     JOIN account_move counterpart_move ON counterpart_move.id = counterpart_line.move_id
                     LEFT JOIN account_payment pay ON pay.id = counterpart_move.payment_id
                     WHERE source_line.move_id IN %s AND counterpart_line.move_id != source_line.move_id
-                    GROUP BY source_line_id, source_move_id, source_line_account_type
+                    GROUP BY source_line.id, source_line.move_id, account.account_type
                 ''')
 
             self._cr.execute(' UNION ALL '.join(queries), [stored_ids, stored_ids])
@@ -1005,6 +1006,7 @@ class AccountMove(models.Model):
                         untaxed_amount_currency=untaxed_amount_currency,
                         untaxed_amount=untaxed_amount,
                         company=invoice.company_id,
+                        cash_rounding=invoice.invoice_cash_rounding_id,
                         sign=sign
                     )
                     for term in invoice_payment_terms:
@@ -3214,6 +3216,7 @@ class AccountMove(models.Model):
                         **vals,
                         'amount_currency': 0.0,
                         'balance': 0.0,
+                        'display_type': 'epd',  # Used to compute tax_tag_invert for early payment discount lines
                     })
                     line_vals['amount_currency'] += vals['amount_currency']
                     line_vals['balance'] += vals['balance']
@@ -3456,6 +3459,25 @@ class AccountMove(models.Model):
                         self.env['account.move.line'].browse(line_ids).with_context(move_reverse_cancel=cancel).reconcile()
 
         return reverse_moves
+
+    def _can_be_unlinked(self):
+        self.ensure_one()
+        lock_date = self.company_id._get_user_fiscal_lock_date()
+        return not self.inalterable_hash and self.date > lock_date
+
+    def _unlink_or_reverse(self):
+        if not self:
+            return
+        to_reverse = self.env['account.move']
+        to_unlink = self.env['account.move']
+        for move in self:
+            if move._can_be_unlinked():
+                to_unlink += move
+            else:
+                to_reverse += move
+        to_unlink.filtered(lambda m: m.state in ('posted', 'cancel')).button_draft()
+        to_unlink.filtered(lambda m: m.state == 'draft').unlink()
+        return to_reverse._reverse_moves(cancel=True)
 
     def _post(self, soft=True):
         """Post/Validate the documents.
@@ -3924,7 +3946,7 @@ class AccountMove(models.Model):
             button_access = {'url': access_link} if access_link else {}
             recipient_group = (
                 'additional_intended_recipient',
-                lambda pdata: pdata['id'] in local_msg_vals.get('partner_ids', []) and pdata['id'] != self.partner_id.id,
+                lambda pdata: pdata['id'] in local_msg_vals.get('partner_ids', []) and pdata['id'] != self.partner_id.id and pdata['type'] != 'user',
                 {
                     'has_button_access': True,
                     'button_access': button_access,
@@ -4376,7 +4398,11 @@ class AccountMove(models.Model):
             force_email_company=force_email_company, force_email_lang=force_email_lang
         )
         subtitles = [render_context['record'].name]
-        if self.invoice_date_due and self.payment_state not in ('in_payment', 'paid'):
+        if (
+            self.invoice_date_due
+            and self.is_invoice(include_receipts=True)
+            and self.payment_state not in ('in_payment', 'paid')
+        ):
             subtitles.append(_('%(amount)s due\N{NO-BREAK SPACE}%(date)s',
                            amount=format_amount(self.env, self.amount_total, self.currency_id, lang_code=render_context.get('lang')),
                            date=format_date(self.env, self.invoice_date_due, date_format='short', lang_code=render_context.get('lang'))

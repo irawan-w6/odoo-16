@@ -19,6 +19,7 @@
 # JanaAvalah, 2023
 # Martin Trigaux, 2023
 # Katrin Kampura, 2023
+# Stevin Lilla, 2024
 # Anna, 2024
 # 
 msgid ""
@@ -614,7 +615,7 @@ msgstr "Heledus"
 #: code:addons/web_editor/static/src/js/editor/odoo-editor/src/OdooEditor.js:0
 #, python-format
 msgid "Bulleted list"
-msgstr ""
+msgstr "Punktidega nimekiri"
 
 #. module: web_editor
 #. odoo-javascript
@@ -1057,14 +1058,14 @@ msgstr ""
 #: code:addons/web_editor/static/src/js/editor/odoo-editor/src/OdooEditor.js:0
 #, python-format
 msgid "Embed Image"
-msgstr ""
+msgstr "Manustatud pilt"
 
 #. module: web_editor
 #. odoo-javascript
 #: code:addons/web_editor/static/src/js/editor/odoo-editor/src/OdooEditor.js:0
 #, python-format
 msgid "Embed Youtube Video"
-msgstr ""
+msgstr "Manusta Youtube video"
 
 #. module: web_editor
 #. odoo-javascript
@@ -1085,7 +1086,7 @@ msgstr ""
 #: code:addons/web_editor/static/src/js/editor/odoo-editor/src/OdooEditor.js:0
 #, python-format
 msgid "Empty quote"
-msgstr ""
+msgstr "Tühi tsitaat"
 
 #. module: web_editor
 #. odoo-javascript
@@ -1195,7 +1196,7 @@ msgstr "Pööra vertikaalselt"
 #. module: web_editor
 #: model_terms:ir.ui.view,arch_db:web_editor.snippet_options_background_options
 msgid "Floating shapes"
-msgstr ""
+msgstr "Hõljuvad kujundid"
 
 #. module: web_editor
 #: model_terms:ir.ui.view,arch_db:web_editor.snippet_options
@@ -1221,7 +1222,7 @@ msgstr "Kirja suurus"
 #: code:addons/web_editor/static/src/js/editor/snippets.editor.js:0
 #, python-format
 msgid "For technical reasons, this block cannot be dropped here"
-msgstr ""
+msgstr "Tehnilistel põhjustel ei saa seda plokki siia lohistada."
 
 #. module: web_editor
 #. odoo-javascript
@@ -1336,21 +1337,21 @@ msgstr "Pealkiri 3"
 #: code:addons/web_editor/static/src/js/editor/odoo-editor/src/OdooEditor.js:0
 #, python-format
 msgid "Heading 4"
-msgstr ""
+msgstr "Pealkiri 4"
 
 #. module: web_editor
 #. odoo-javascript
 #: code:addons/web_editor/static/src/js/editor/odoo-editor/src/OdooEditor.js:0
 #, python-format
 msgid "Heading 5"
-msgstr ""
+msgstr "Pealkiri 5"
 
 #. module: web_editor
 #. odoo-javascript
 #: code:addons/web_editor/static/src/js/editor/odoo-editor/src/OdooEditor.js:0
 #, python-format
 msgid "Heading 6"
-msgstr ""
+msgstr "Pealkiri 6"
 
 #. module: web_editor
 #: model_terms:ir.ui.view,arch_db:web_editor.snippet_options_background_options
@@ -1529,7 +1530,7 @@ msgstr "Tindipott"
 #: code:addons/web_editor/static/src/js/editor/snippets.editor.js:0
 #, python-format
 msgid "Inline Text"
-msgstr ""
+msgstr "Reasisene tekst"
 
 #. module: web_editor
 #. odoo-javascript
@@ -3018,7 +3019,7 @@ msgstr ""
 #: code:addons/web_editor/static/src/xml/editor.xml:0
 #, python-format
 msgid "Toggle underline"
-msgstr ""
+msgstr "Lülita sisse/välja alla joonimine"
 
 #. module: web_editor
 #. odoo-javascript

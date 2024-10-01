@@ -9466,6 +9466,12 @@ msgid "Never"
 msgstr "하지않음"
 
 #. module: account
+#: code:addons/account/models/account_tax.py:0
+#, python-format
+msgid "Nested group of taxes are not allowed."
+msgstr "중첩된 세금 그룹은 사용할 수 없습니다."
+
+#. module: account
 #: model:ir.model.fields,field_description:account.field_account_setup_bank_manual_config__new_journal_name
 msgid "New Journal Name"
 msgstr "새로운 분개장 명칭"
@@ -13749,6 +13755,14 @@ msgid "The company this distribution line belongs to."
 msgstr "이 유통 항목이 속해 있는 회사입니다."
 
 #. module: account
+#: code:addons/account/models/partner.py:0
+#, python-format
+msgid ""
+"The country of the foreign VAT number could not be detected. Please assign a"
+" country to the fiscal position or set a country group"
+msgstr "해외 VAT 번호의 국가를 확인할 수 없습니다. 재정 위치에 국가를 부여하거나 국가 그룹을 설정하세요."
+
+#. module: account
 #: model:ir.model.fields,help:account.field_account_tax_group__country_id
 msgid "The country for which this tax group is applicable."
 msgstr "이 세금 그룹이 적용되는 회사입니다."
@@ -14773,6 +14787,14 @@ msgid ""
 "This journal already contains items, therefore you cannot modify its "
 "company."
 msgstr "이 분개에는 이미 항목이 포함되어 있으므로 회사를 수정할 수 없습니다."
+
+#. module: account
+#. odoo-python
+#: code:addons/account/models/account_journal.py:0
+#, python-format
+msgid ""
+"This journal is associated with a payment method. You cannot archive it"
+msgstr "이 전표는 결제 수단과 연결되어 있습니다. 보관 처리할 수 없습니다."
 
 #. module: account
 #. odoo-python
@@ -16193,6 +16215,14 @@ msgstr "전표에 계좌 유형이 은행 계좌로 설정된 경우에는 미�
 
 #. module: account
 #. odoo-python
+#: code:addons/account/models/partner.py:0
+#, python-format
+msgid ""
+"You cannot create a fiscal position with a country outside of the selected "
+"country group."
+msgstr "선택한 국가 그룹 외부에 있는 국가에는 재정 포지션을 생성할 수 없습니다."
+
+#. module: account
 #: code:addons/account/models/partner.py:0
 #, python-format
 msgid ""

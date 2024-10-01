@@ -385,13 +385,13 @@ msgstr ""
 "                    <td valign=\"top\" style=\"font-size: 13px;\">\n"
 "                        <div>\n"
 "                            Hola <t t-out=\"object.partner_id and object.partner_id.name or ''\">Deco Addict</t>,<br><br>\n"
-"                            Reciba la bienvenida a <t t-out=\"object.company_id.name or ''\">Mi Empresa (San Francisco)</t>.\n"
-"                            ¡Es un placer conocerle! Ahora que está abordo, descubrirá lo que <t t-out=\"object.company_id.name or ''\">Mi Empresa (San Francisco)</t> tiene para ofrecer. Me llamo <t t-out=\"object.user_id.name or ''\">Marc Demo</t>  le ayudaré a aprovechar Odoo al máximo. ¿Podemos agendar una demostración pronto?<br>\n"
-"                            ¡Siéntase libre de contactarme en cualquier momento!<br><br>\n"
+"                            Le damos la bienvenida a <t t-out=\"object.company_id.name or ''\">Mi Empresa (San Francisco)</t>.\n"
+"                            Mucho gusto en conocerle. Ahora que está con nosotros, descubrirá lo que <t t-out=\"object.company_id.name or ''\">Mi Empresa (San Francisco)</t> tiene para ofrecer. Me llamo <t t-out=\"object.user_id.name or ''\">Marc Demo</t> y le ayudaré a aprovechar Odoo al máximo. ¿Por qué no agendamos una demostración?<br>\n"
+"                            No dude en contactarme si necesita ayuda.<br><br>\n"
 "                            Saludos,<br>\n"
 "                            <t t-if=\"object.user_id\">\n"
 "                                <b><t t-out=\"object.user_id.name or ''\">Marc Demo</t></b>\n"
-"                                <br>Correo electrónico: <t t-out=\"object.user_id.email or ''\">mark.brown23@example.com</t>\n"
+"                                <br>Correo electrónico: <t t-out=\"object.user_id.email or ''\">mark.brown23@ejemplo.com</t>\n"
 "                                <br>Teléfono: <t t-out=\"object.user_id.phone or ''\">+1 650-123-4567</t>\n"
 "                            </t>\n"
 "                            <t t-else=\"\">\n"
@@ -3446,7 +3446,7 @@ msgstr "Mostrar únicamente oportunidades"
 #: model:ir.model.fields,field_description:crm.field_crm_team__assignment_optout
 #: model:ir.model.fields,field_description:crm.field_crm_team_member__assignment_optout
 msgid "Skip auto assignment"
-msgstr "Omitir durante la asignación automática"
+msgstr "Omitir la asignación automática"
 
 #. module: crm
 #: model_terms:ir.ui.view,arch_db:crm.crm_case_tree_view_oppor
