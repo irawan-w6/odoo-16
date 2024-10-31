@@ -1497,6 +1497,20 @@ msgid ""
 msgstr "アカウント%sは消込を許可していません。まず、このアカウントの構成を変更して許可します。"
 
 #. module: account
+#. odoo-python
+#: code:addons/account/models/account_move_line.py:0
+#, python-format
+msgid "Account %s is of payable type, but is used in a sale operation."
+msgstr ""
+
+#. module: account
+#. odoo-python
+#: code:addons/account/models/account_move_line.py:0
+#, python-format
+msgid "Account %s is of receivable type, but is used in a purchase operation."
+msgstr ""
+
+#. module: account
 #: model:ir.model,name:account.model_account_cash_rounding
 msgid "Account Cash Rounding"
 msgstr "勘定科目現金丸め表示"
@@ -5054,7 +5068,7 @@ msgstr "ダッシュボード"
 #. module: account
 #: model:ir.actions.server,name:account.action_check_hash_integrity
 msgid "Data Inalterability Check"
-msgstr "データの不変性チェック"
+msgstr "データの変更不可チェック"
 
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.report_hash_integrity
@@ -7388,19 +7402,19 @@ msgstr "無効"
 #: model:ir.model.fields,field_description:account.field_account_move__inalterable_hash
 #: model:ir.model.fields,field_description:account.field_account_payment__inalterable_hash
 msgid "Inalterability Hash"
-msgstr "不変性ハッシュ"
+msgstr "変更不可ハッシュ"
 
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.report_hash_integrity
 msgid "Inalterability check"
-msgstr "不変性チェック"
+msgstr "変更不可チェック"
 
 #. module: account
 #: model:ir.model.fields,field_description:account.field_account_bank_statement_line__secure_sequence_number
 #: model:ir.model.fields,field_description:account.field_account_move__secure_sequence_number
 #: model:ir.model.fields,field_description:account.field_account_payment__secure_sequence_number
 msgid "Inalteralbility No Gap Sequence #"
-msgstr "不変性ギャップなしシーケンス＃"
+msgstr "変更不可ギャップなしシーケンス＃"
 
 #. module: account
 #: model:ir.model.fields.selection,name:account.selection__account_payment_method__payment_type__inbound
@@ -13508,6 +13522,15 @@ msgstr ""
 "%(date_field)s (%(date)s)  は %(model)s (%(sequence)s)に関連するシーケンス番号に一致しません。\n"
 "処理を進めるためには%(model)sの%(sequence_field)s をクリアにする必要があります。\n"
 "その際、日付ベースの連続したシーケンスを維持したい場合には、エントリーの順序を変更して下さい。"
+
+#. module: account
+#. odoo-python
+#: code:addons/account/models/account_report.py:0
+#, python-format
+msgid ""
+"The Availability is set to 'Country Matches' but the field Country is not "
+"set."
+msgstr ""
 
 #. module: account
 #. odoo-python
