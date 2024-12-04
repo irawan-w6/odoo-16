@@ -1483,6 +1483,30 @@ msgid "Only Managers and HR Officers can refuse expenses"
 msgstr "Nur Manager und Personalsachbearbeiter können Spesen ablehnen."
 
 #. module: hr_expense
+#. odoo-python
+#: code:addons/hr_expense/models/hr_expense.py:0
+#: code:addons/hr_expense/models/hr_expense.py:0
+#, python-format
+msgid "Employee(s) should have a bank account set."
+msgstr "Für Mitarbeiter sollte ein Bankkonto hinterlegt sein."
+
+#. module: hr_expense
+#. odoo-python
+#: code:addons/hr_expense/models/hr_expense.py:0
+#: code:addons/hr_expense/models/hr_expense.py:0
+#, python-format
+msgid "Go to Employee(s)"
+msgstr "Zu Mitarbeiter(n)"
+
+#. module: hr_expense
+#. odoo-python
+#: code:addons/hr_expense/models/hr_expense.py:0
+#: code:addons/hr_expense/models/hr_expense.py:0
+#, python-format
+msgid "Employee(s)"
+msgstr "Mitarbeiter"
+
+#. module: hr_expense
 #: model_terms:ir.actions.act_window,help:hr_expense.hr_expense_actions_my_all
 msgid "Or"
 msgstr "Oder"
