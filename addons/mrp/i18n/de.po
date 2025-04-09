@@ -2412,7 +2412,7 @@ msgid ""
 "If the active field is set to False, it will allow you to hide the resource "
 "record without removing it."
 msgstr ""
-"Wenn das aktive Feld auf False gesetzt ist, können Sie den "
+"Wenn das aktive Feld auf Falsch gesetzt ist, können Sie den "
 "Ressourcendatensatz ausblenden, ohne ihn zu entfernen."
 
 #. module: mrp
@@ -2423,7 +2423,7 @@ msgstr "Bildhöhe"
 #. module: mrp
 #: model:ir.model.fields,field_description:mrp.field_mrp_document__image_src
 msgid "Image Src"
-msgstr "Bild Src"
+msgstr "Bildquelle"
 
 #. module: mrp
 #: model:ir.model.fields,field_description:mrp.field_mrp_document__image_width
