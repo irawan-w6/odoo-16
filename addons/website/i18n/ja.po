@@ -16,7 +16,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-02-10 08:26+0000\n"
+"POT-Creation-Date: 2025-05-08 20:34+0000\n"
 "PO-Revision-Date: 2022-09-22 05:56+0000\n"
 "Last-Translator: Junko Augias, 2025\n"
 "Language-Team: Japanese (https://app.transifex.com/odoo/teams/41243/ja/)\n"
@@ -1388,7 +1388,7 @@ msgstr "カラーブロック"
 #: model_terms:ir.ui.view,arch_db:website.s_masonry_block_reversed_template
 #: model_terms:ir.ui.view,arch_db:website.s_masonry_block_texts_image_texts_template
 msgid "A great title"
-msgstr "素晴らしいタイトル"
+msgstr "魅力的なタイトル"
 
 #. module: website
 #: model:ir.model.fields,help:website.field_website_snippet_filter__field_names
@@ -1409,12 +1409,12 @@ msgstr "最後の接続が8時間以上前の場合は新規訪問と判断さ�
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_showcase
 msgid "A short description of this great feature."
-msgstr "この優れた特徴の簡単な説明。"
+msgstr "この優れた機能の簡単な説明です。"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_features
 msgid "A small explanation of this great <br/>feature, in clear words."
-msgstr "この素晴らしい特徴を<br/>簡単な言葉で説明しましょう。"
+msgstr "この優れた機能について<br/>わかりやすく簡潔に説明します。"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_timeline
@@ -2118,7 +2118,6 @@ msgstr "バックドロップ"
 
 #. module: website
 #. odoo-javascript
-#: code:addons/website/static/src/xml/website.editor.xml:0
 #: code:addons/website/static/src/xml/website.editor.xml:0
 #: code:addons/website/static/src/xml/website.editor.xml:0
 #: model_terms:ir.ui.view,arch_db:website.s_chart_options
@@ -5057,10 +5056,7 @@ msgid "Header Visible"
 msgstr "ヘッダ表示"
 
 #. module: website
-#. odoo-javascript
-#: code:addons/website/static/src/xml/website.editor.xml:0
 #: model_terms:ir.ui.view,arch_db:website.snippet_options
-#, python-format
 msgid "Headings"
 msgstr "見出し"
 
@@ -5070,42 +5066,27 @@ msgid "Headings 1"
 msgstr "見出し 1"
 
 #. module: website
-#. odoo-javascript
-#: code:addons/website/static/src/xml/website.editor.xml:0
 #: model_terms:ir.ui.view,arch_db:website.bs_debug_view
-#, python-format
 msgid "Headings 2"
 msgstr "見出し 2"
 
 #. module: website
-#. odoo-javascript
-#: code:addons/website/static/src/xml/website.editor.xml:0
 #: model_terms:ir.ui.view,arch_db:website.bs_debug_view
-#, python-format
 msgid "Headings 3"
 msgstr "見出し 3"
 
 #. module: website
-#. odoo-javascript
-#: code:addons/website/static/src/xml/website.editor.xml:0
 #: model_terms:ir.ui.view,arch_db:website.bs_debug_view
-#, python-format
 msgid "Headings 4"
 msgstr "見出し 4"
 
 #. module: website
-#. odoo-javascript
-#: code:addons/website/static/src/xml/website.editor.xml:0
 #: model_terms:ir.ui.view,arch_db:website.bs_debug_view
-#, python-format
 msgid "Headings 5"
 msgstr "見出し 5"
 
 #. module: website
-#. odoo-javascript
-#: code:addons/website/static/src/xml/website.editor.xml:0
 #: model_terms:ir.ui.view,arch_db:website.bs_debug_view
-#, python-format
 msgid "Headings 6"
 msgstr "見出し 6"
 
@@ -5859,17 +5840,17 @@ msgstr "次の数値より上回る、又はそれに等しい:"
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_website_form_options
 msgid "Is less than"
-msgstr "次の数値を下回る:"
+msgstr "次より小さい:"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_website_form_options
 msgid "Is less than or equal to"
-msgstr "次の数値を下回る、又はそれに等しい:"
+msgstr "次以下:"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_website_form_options
 msgid "Is not between (excluded)"
-msgstr "次の数値の間ではない (それらの数値を含まない)"
+msgstr "次の範囲外(除外): "
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_website_form_options
@@ -5879,12 +5860,12 @@ msgstr "次の数値に等しくない:"
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_website_form_options
 msgid "Is not set"
-msgstr "設定してない"
+msgstr "未設定"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_website_form_options
 msgid "Is set"
-msgstr "設定してる"
+msgstr "設定済"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.snippet_options
@@ -5902,7 +5883,7 @@ msgstr ""
 #: code:addons/website/static/src/components/dialog/page_properties.xml:0
 #, python-format
 msgid "It looks like your file is being called by"
-msgstr "ファイルは次のユーザーに呼び出されているみたいです:"
+msgstr "ファイルは次のユーザに呼び出されているようです:"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.snippet_options
@@ -6333,10 +6314,7 @@ msgid "Linkedin"
 msgstr "Linkedin"
 
 #. module: website
-#. odoo-javascript
-#: code:addons/website/static/src/xml/website.editor.xml:0
 #: model_terms:ir.ui.view,arch_db:website.snippet_options
-#, python-format
 msgid "Links"
 msgstr "リンク"
 
@@ -6943,7 +6921,7 @@ msgstr "ネットワーク"
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.neutralize_ribbon
 msgid "Neutralized"
-msgstr "中和"
+msgstr "安全化"
 
 #. module: website
 #. odoo-javascript
@@ -7867,13 +7845,6 @@ msgid "Primary"
 msgstr "プライマリ"
 
 #. module: website
-#. odoo-javascript
-#: code:addons/website/static/src/xml/website.editor.xml:0
-#, python-format
-msgid "Primary Buttons"
-msgstr "プライマリボタン"
-
-#. module: website
 #: model_terms:ir.ui.view,arch_db:website.snippet_options
 msgid "Primary Style"
 msgstr "プライマリスタイル"
@@ -8371,7 +8342,7 @@ msgstr "丸い"
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_image_gallery_options
 msgid "Rounded Miniatures"
-msgstr "丸いミニチュア"
+msgstr "丸型サムネイル"
 
 #. module: website
 #: model:ir.model.fields,field_description:website.field_website_rewrite__route_id
@@ -8594,13 +8565,6 @@ msgid "Secondary"
 msgstr "セカンダリ"
 
 #. module: website
-#. odoo-javascript
-#: code:addons/website/static/src/xml/website.editor.xml:0
-#, python-format
-msgid "Secondary Buttons"
-msgstr "セカンダリボタン"
-
-#. module: website
 #: model_terms:ir.ui.view,arch_db:website.snippet_options
 msgid "Secondary Style"
 msgstr "セカンダリスタイル"
@@ -8789,7 +8753,7 @@ msgstr "一番良い事例研究を共有"
 #. module: website
 #: model:ir.model.fields,field_description:website.field_res_config_settings__shared_user_account
 msgid "Shared Customer Accounts"
-msgstr "共有済顧客アカウント"
+msgstr "共有顧客アカウント"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.res_config_settings_view_form
@@ -9409,12 +9373,9 @@ msgid "Test your robots.txt with Google Search Console"
 msgstr "Googleサーチコンソールでrobots.txtをテスト"
 
 #. module: website
-#. odoo-javascript
-#: code:addons/website/static/src/xml/website.editor.xml:0
 #: model_terms:ir.ui.view,arch_db:website.s_website_form_options
 #: model_terms:ir.ui.view,arch_db:website.snippet_options
 #: model_terms:ir.ui.view,arch_db:website.snippets
-#, python-format
 msgid "Text"
 msgstr "テキスト"
 
@@ -11145,13 +11106,6 @@ msgstr "自分が言いたいことではなく、<br/>お客様が知りたい�
 #: model_terms:ir.ui.view,arch_db:website.s_timeline_options
 msgid "Year"
 msgstr "年"
-
-#. module: website
-#. odoo-javascript
-#: code:addons/website/static/src/xml/website_form_editor.xml:0
-#, python-format
-msgid "Yes"
-msgstr "はい"
 
 #. module: website
 #. odoo-javascript

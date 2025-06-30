@@ -34,7 +34,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-02-10 08:26+0000\n"
+"POT-Creation-Date: 2025-06-13 18:35+0000\n"
 "PO-Revision-Date: 2022-09-22 05:55+0000\n"
 "Last-Translator: Baskhuu Lodoikhuu <baskhuujacara@gmail.com>, 2025\n"
 "Language-Team: Mongolian (https://app.transifex.com/odoo/teams/41243/mn/)\n"
@@ -1659,8 +1659,10 @@ msgstr "Тээврийн үнийг тооцоолох"
 
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.res_config_settings_view_form
-msgid "Compute shipping costs and ship with DHL"
-msgstr "DHL-н хүргэлт болон хүргэлтийн өртгийг тооцох"
+msgid ""
+"Compute shipping costs and ship with DHL<br/>\n"
+"                                        <strong>(please go to Home&gt;Apps to install)</strong>"
+msgstr ""
 
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.res_config_settings_view_form
@@ -1669,8 +1671,10 @@ msgstr "Easypost-н хүргэлт болон хүргэлтийн өртгий�
 
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.res_config_settings_view_form
-msgid "Compute shipping costs and ship with FedEx"
-msgstr "FedEx-н хүргэлт болон хүргэлтийн өртгийг тооцох"
+msgid ""
+"Compute shipping costs and ship with FedEx<br/>\n"
+"                                        <strong>(please go to Home&gt;Apps to install)</strong>"
+msgstr ""
 
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.res_config_settings_view_form
@@ -1679,13 +1683,17 @@ msgstr "Sendcloud ашиглан хүргэлтийн өртөг болон ар
 
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.res_config_settings_view_form
-msgid "Compute shipping costs and ship with UPS"
-msgstr "UPS-н хүргэлт болон хүргэлтийн өртгийг тооцох"
+msgid ""
+"Compute shipping costs and ship with UPS<br/>\n"
+"                                        <strong>(please go to Home&gt;Apps to install)</strong>"
+msgstr ""
 
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.res_config_settings_view_form
-msgid "Compute shipping costs and ship with USPS"
-msgstr "USPS-н хүргэлт болон хүргэлтийн өртгийг тооцох"
+msgid ""
+"Compute shipping costs and ship with USPS<br/>\n"
+"                                        <strong>(please go to Home&gt;Apps to install)</strong>"
+msgstr ""
 
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.res_config_settings_view_form
@@ -2129,6 +2137,11 @@ msgstr "Захиалагчийн байрлалууд"
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.view_location_form
 msgid "Cyclic Counting"
+msgstr ""
+
+#. module: stock
+#: model_terms:ir.ui.view,arch_db:stock.res_config_settings_view_form
+msgid "DHL Connector"
 msgstr ""
 
 #. module: stock
@@ -2770,7 +2783,7 @@ msgstr "Easypost холболт"
 #: code:addons/stock/models/stock_orderpoint.py:0
 #, python-format
 msgid "Edit Product"
-msgstr ""
+msgstr "Бараа засах"
 
 #. module: stock
 #. odoo-python
@@ -2935,6 +2948,7 @@ msgstr "2-р сар"
 
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_res_config_settings__module_delivery_fedex
+#: model_terms:ir.ui.view,arch_db:stock.res_config_settings_view_form
 msgid "FedEx Connector"
 msgstr "FedEx холболт"
 
@@ -3025,7 +3039,7 @@ msgstr "Таамаглалт нөөцийн тайлбар"
 #: model_terms:ir.ui.view,arch_db:stock.view_picking_form
 #: model_terms:ir.ui.view,arch_db:stock.view_warehouse_orderpoint_tree_editable
 msgid "Forecast Report"
-msgstr ""
+msgstr "Таамаглалын тайлан"
 
 #. module: stock
 #: model:ir.model.fields,help:stock.field_product_product__virtual_available
@@ -3150,7 +3164,7 @@ msgstr "Гарт буй тоо хэмжээ"
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.product_product_stock_tree
 msgid "Free to Use"
-msgstr ""
+msgstr "Чөлөөтэй нөөц"
 
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_move_line__location_id
@@ -5858,7 +5872,7 @@ msgstr ""
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_warehouse_orderpoint__route_id
 msgid "Preferred Route"
-msgstr ""
+msgstr "Анхдагч дамжлага"
 
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_product_replenish__route_ids
@@ -7561,7 +7575,7 @@ msgstr "Агуулахыг ялгахад хэрэглэгдэх богино н
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_picking__show_allocation
 msgid "Show Allocation"
-msgstr ""
+msgstr "Үйлдвэрлэлийн карт харуулах"
 
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_picking__show_check_availability
@@ -8088,7 +8102,7 @@ msgstr ""
 msgid ""
 "Technical Field used to decide whether the button \"Allocation\" should be "
 "displayed."
-msgstr ""
+msgstr "\"Үйлдвэрлэлийн карт\" товчлуурыг дэлгэцэнд харуулах эсэхийг тодорхойлно."
 
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.view_warehouse
@@ -8246,6 +8260,9 @@ msgid ""
 "            On the operation type you could e.g. specify if packing is needed by default,\n"
 "            if it should show the customer."
 msgstr ""
+"Ажиллагааны төрлийн систем нь агуулахын үйлдэл бүрт тодорхой төрөл оноож, \n"
+"              түүнд тохирсон харагдах байдал болон үйлдлийг өөрчлөх боломж олгодог.\n"
+"Жишээлбэл, тухайн төрлөөс хамааран анхдагчаар савлах эсэх, эсвэл харилцагчийг харуулах эсэхийг тохируулж болно."
 
 #. module: stock
 #: model:ir.model.fields,help:stock.field_stock_quant__package_id
@@ -8955,11 +8972,13 @@ msgstr "Бичлэг дээрх асуудал бүхий ажилбарын т�
 
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_res_config_settings__module_delivery_ups
+#: model_terms:ir.ui.view,arch_db:stock.res_config_settings_view_form
 msgid "UPS Connector"
 msgstr "UPS холболт"
 
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_res_config_settings__module_delivery_usps
+#: model_terms:ir.ui.view,arch_db:stock.res_config_settings_view_form
 msgid "USPS Connector"
 msgstr "USPS холболт"
 

@@ -1079,7 +1079,7 @@ msgstr "Doktorat"
 #. module: hr_recruitment
 #: model:ir.model.fields,field_description:hr_recruitment.field_hr_job__documents_count
 msgid "Document Count"
-msgstr ""
+msgstr "Število dokumentov"
 
 #. module: hr_recruitment
 #: model_terms:ir.ui.view,arch_db:hr_recruitment.res_config_settings_view_form
@@ -1479,7 +1479,7 @@ msgstr "Je urednik"
 #. module: hr_recruitment
 #: model:ir.model.fields,field_description:hr_recruitment.field_hr_job__is_favorite
 msgid "Is Favorite"
-msgstr ""
+msgstr "Je priljubljen"
 
 #. module: hr_recruitment
 #: model:ir.model.fields,field_description:hr_recruitment.field_hr_applicant__message_is_follower
@@ -2030,6 +2030,10 @@ msgid ""
 "a placeholder expression that provides the appropriate language, e.g. {{ "
 "object.partner_id.lang }}."
 msgstr ""
+"Izbirni jezik prevoda (koda ISO), ki ga je treba izbrati pri pošiljanju "
+"e-pošte. Če ni nastavljen, bo uporabljena angleška različica. Običajno naj "
+"bo to nadomestni izraz, ki ponuja ustrezen jezik, npr. {{ "
+"object.partner_id.lang }}."
 
 #. module: hr_recruitment
 #. odoo-javascript
@@ -2285,7 +2289,7 @@ msgstr ""
 #. module: hr_recruitment
 #: model:ir.model.fields,field_description:hr_recruitment.field_applicant_send_mail__render_model
 msgid "Rendering Model"
-msgstr ""
+msgstr "Model upodabljanja"
 
 #. module: hr_recruitment
 #: model:ir.ui.menu,name:hr_recruitment.report_hr_recruitment

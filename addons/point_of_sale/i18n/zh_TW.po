@@ -6,15 +6,14 @@
 # 敬雲 林 <chingyun@yuanchih-consult.com>, 2022
 # Benson <Benson.Dr@Gmail.com>, 2023
 # Martin Trigaux, 2023
-# Pak Wai Ho, 2025
 # Wil Odoo, 2025
 # Tony Ng, 2025
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 16.0+e\n"
+"Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-19 11:06+0000\n"
+"POT-Creation-Date: 2025-06-27 03:35+0000\n"
 "PO-Revision-Date: 2022-09-22 05:53+0000\n"
 "Last-Translator: Tony Ng, 2025\n"
 "Language-Team: Chinese (Taiwan) (https://app.transifex.com/odoo/teams/41243/zh_TW/)\n"
@@ -896,7 +895,7 @@ msgstr "關閉前差異金額"
 #. module: point_of_sale
 #: model_terms:ir.ui.view,arch_db:point_of_sale.ticket_validation_screen
 msgid "Billing address:"
-msgstr "賬單地址:"
+msgstr "賬單地址："
 
 #. module: point_of_sale
 #: model_terms:ir.ui.view,arch_db:point_of_sale.view_pos_bill_form
@@ -1805,7 +1804,7 @@ msgstr "DETAILS"
 #. module: point_of_sale
 #: model:ir.ui.menu,name:point_of_sale.menu_pos_dashboard
 msgid "Dashboard"
-msgstr "儀表板"
+msgstr "Dashboard"
 
 #. module: point_of_sale
 #. odoo-javascript
@@ -1999,7 +1998,7 @@ msgstr "摘要"
 #. module: point_of_sale
 #: model_terms:ir.ui.view,arch_db:point_of_sale.view_pos_pos_form
 msgid "Disc.%"
-msgstr "折扣率%"
+msgstr "折扣 %"
 
 #. module: point_of_sale
 #: model_terms:ir.ui.view,arch_db:point_of_sale.report_saledetails
@@ -3375,8 +3374,8 @@ msgstr "更多⋯"
 #. odoo-javascript
 #: code:addons/point_of_sale/static/src/js/Screens/TicketScreen/TicketScreen.js:0
 #, python-format
-msgid "Multiple Invoiced Orders Selected"
-msgstr "選擇了多個已開發票訂單"
+msgid "Multiple Orders Selected"
+msgstr ""
 
 #. module: point_of_sale
 #: model:ir.model.fields,field_description:point_of_sale.field_pos_session__my_activity_date_deadline
@@ -4071,7 +4070,7 @@ msgstr "POS 銷售"
 #. module: point_of_sale
 #: model:ir.model.fields,field_description:point_of_sale.field_account_payment__pos_session_id
 msgid "POS Session"
-msgstr "POS營業點"
+msgstr "POS 操作時段"
 
 #. module: point_of_sale
 #. odoo-python
@@ -4650,7 +4649,7 @@ msgstr "POS付款"
 #: model_terms:ir.ui.view,arch_db:point_of_sale.view_pos_session_search
 #: model_terms:ir.ui.view,arch_db:point_of_sale.view_pos_session_tree
 msgid "Point of Sale Session"
-msgstr "POS營業點"
+msgstr "POS 操作時段"
 
 #. module: point_of_sale
 #: model_terms:ir.ui.view,arch_db:point_of_sale.qunit_suite
@@ -4723,7 +4722,7 @@ msgstr "PoS可選類別"
 #. module: point_of_sale
 #: model:ir.model.fields,field_description:point_of_sale.field_stock_picking__pos_session_id
 msgid "Pos Session"
-msgstr "POS營業點"
+msgstr "POS 操作時段"
 
 #. module: point_of_sale
 #: model:ir.model.fields,field_description:point_of_sale.field_pos_config__pos_session_duration
@@ -4743,7 +4742,7 @@ msgstr "POS營業點使用者"
 #. module: point_of_sale
 #: model:ir.model.fields,field_description:point_of_sale.field_pos_payment_method__open_session_ids
 msgid "Pos Sessions"
-msgstr "POS營業點"
+msgstr "POS 操作時段"
 
 #. module: point_of_sale
 #: model:ir.model.fields,field_description:point_of_sale.field_pos_config__is_posbox
@@ -4916,7 +4915,7 @@ msgid ""
 "Printing is not supported on some browsers due to no default printing "
 "protocol is available. It is possible to print your tickets by making use of"
 " an IoT Box."
-msgstr ""
+msgstr "由於沒有預設列印協議可用，部份瀏覽器未能支援列印功能。使用 IoT Box 可列印你的小票。"
 
 #. module: point_of_sale
 #: model:ir.model,name:point_of_sale.model_procurement_group
@@ -6700,6 +6699,15 @@ msgid ""
 msgstr "該日記賬與支付方式相關聯,不能修改其類型"
 
 #. module: point_of_sale
+#. odoo-python
+#: code:addons/point_of_sale/models/account_journal.py:0
+#, python-format
+msgid ""
+"This journal is associated with payment method %s that is being used by "
+"order %s in the active pos session %s"
+msgstr "此日記賬已與付款方式 %s 相關聯，該付款方式由訂單 %s 所使用，相關的生效銷售點操作時段：%s"
+
+#. module: point_of_sale
 #. odoo-javascript
 #: code:addons/point_of_sale/static/src/js/ChromeWidgets/DebugWidget.js:0
 #, python-format
@@ -7444,9 +7452,9 @@ msgstr "您已為%s付款方式啟用了\"識別客戶\"選項，但訂單 %s �
 #: code:addons/point_of_sale/static/src/js/Screens/TicketScreen/TicketScreen.js:0
 #, python-format
 msgid ""
-"You have selected orderlines from multiple invoiced orders. To proceed "
-"refund, please select orderlines from the same invoiced order."
-msgstr "您選擇了來自多張發票的訂單行。如要進行退款，請選擇同一張發票的訂單行。"
+"You have selected orderlines from multiple orders. To proceed refund, please"
+" select orderlines from the same order."
+msgstr ""
 
 #. module: point_of_sale
 #. odoo-javascript
@@ -7727,12 +7735,3 @@ msgstr ""
 #, python-format
 msgid "were duplicates of existing orders"
 msgstr "與目前訂單重複"
-
-#. module: point_of_sale
-#. odoo-python
-#: code:addons/point_of_sale/models/account_journal.py:0
-#, python-format
-msgid ""
-"This journal is associated with payment method %s that is being used by "
-"order %s in the active pos session %s"
-msgstr "此日記賬已與付款方式 %s 相關聯，該付款方式由訂單 %s 所使用，相關的生效銷售點操作時段：%s"
